@@ -37,7 +37,7 @@ export const addLiquidity = async (
 	} catch (error) {
 		console.error(error);
 	}
-
+}
 	// Calculate the CD tokens that need to be added to the liquidity given _addEtherAmountWei
 	export const calculateCD = async (
 		_addEther = "0",
@@ -48,4 +48,3 @@ export const addLiquidity = async (
 		const cryptoDevTokenAmount = _addEtherAmountWei.mul(cdTokenReserve).div(etherBalanceContract);
 		return cryptoDevTokenAmount;
 	}
-}

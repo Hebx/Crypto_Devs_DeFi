@@ -51,7 +51,7 @@ export const swapTokens = async (
 	const exchangeContract = new Contract(
 		EXCHANGE_CONTRACT_ADDRESS,
 		EXCHANGE_CONTRACT_ABI,
-		provider
+		signer
 		)
 	const tokenContract = new Contract(
 		TOKEN_CONTRACT_ADDRESS,
